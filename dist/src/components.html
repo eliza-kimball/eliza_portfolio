@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="winter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" crossorigin href="/assets/style-CrlpVfFq.css">
+  </head>
+  <body class="font-[Reddit_Sans]">
+    <!-- Nav Bar -->
+    <div class="bg-secondary text-white w-full">
+      <div class="navbar bg-secondary text-white max-w-7xl mx-auto">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl" href="../index.html">ELIZA</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="max-w-4xl mx-auto py-8 px-6 text-md leading-relaxed">
+        <!--Title -->
+        <div class="text-center p-4">
+          <h1 class="text-4xl p-2 text-secondary">
+            Rebuilding Modern UI Components
+          </h1>
+          <h2 class="text-2xl text-secondary">Tailwind CSS and Svelte</h2>
+        </div>
+        <!--1st-->
+        <div class="flex items-start space-x-4">
+          <div class="text-md leading-relaxed flex-1">
+            <p>
+              Svelte is a powerful framework for building web interfaces by
+              converting code into optimized vanilla JavaScript for improved
+              performance. Tailwind CSS, a utility-first CSS framework,
+              accelerates styling by providing ready-to-use classes, making it
+              easier to create responsive and customizable designs. When I was
+              tasked with rebuilding components with Svelte and Tailwind, this
+              presented an exciting challenge, especially since I was new to
+              both tools. Through persistence and a process of trial and error,
+              I successfully crafted a component that effectively leverages the
+              strengths of both Svelte and Tailwind.
+            </p>
+          </div>
+
+          <!-- Image to the right -->
+          <img
+            src="/assets/components1-DlVUMK53.png"
+            alt="Svelte and Tailwind UI"
+            class="w-1/4 max-w-sm rounded-lg shadow-md"
+          />
+        </div>
+
+        <!--2nd-->
+        <div class="space-y-4 mt-6">
+          <h3 class="text-xl font-bold">Creating Reusable Button Variants</h3>
+
+          <p>
+            The component I rebuilt is a popup for entering a team name. To
+            promote reusability, I broke the popup down into smaller, manageable
+            elements, starting with the button element. I decided to create
+            three different button variants—regular, dark, and flat—to
+            accommodate different design needs.
+          </p>
+
+          <!-- Image below the first paragraph -->
+          <img
+            src="/assets/components2-CbYv13U4.png"
+            alt="Fetching Weather Data"
+            class="w-full max-w-4xl mx-auto"
+          />
+        </div>
+        <!--3rd-->
+        <div class="space-y-4 mt-6">
+        <p class="mt-4 font-semibold">How it works: </p>
+            <ul class="list-disc pl-6 space-y-2">
+                <li>Conditional Rendering: The code above uses Svelte’s {#if} blocks to determine which button variant to display on the type variable. If the type is regular, dark, or flat, this is the corresponding button that is displayed.</li>
+                <li>Styling with Tailwind: CSS classes are used within the class attribute. Each variant has unique styling such as color, hover, and size. </li>
+            </ul>
+        <p>This approach allowed me to build a versatile and reusable button component. By breaking the popup into distinct elements and leveraging Svelte’s reactivity along with Tailwind CSS’s utility-first styling, I was able to create a component that is both efficient and easy to integrate into other parts of the application.</p>
+        </div>
+
+        <!--4th-->
+        <div class="space-y-4 mt-6">
+            <h3 class="text-xl font-bold">Popup Component</h3>
+            <p>
+                After developing both the input and button elements as reusable custom components, I integrated them with structured HTML to create the popup. I leveraged Svelte’s conditional rendering to craft two distinct themes—light and dark.
+            </p>
+            <p>
+                For each theme, a container div wraps the popup content and is styled using Tailwind CSS to define its width, background color, border, padding, and margin. Inside this container, an h1 element displays the title while a p element offers additional context, ensuring a clear separation between content and style for easy management and layout adjustments.
+            </p>
+            <p class="mt-4 font-semibold">To complete the popup, I incorporated custom components for user interaction:</p>
+            
+            <ul class="list-disc pl-6 space-y-2">
+                <li>MyInput: This component is used for entering the team name and adapts to the theme via the type attribute.</li>
+                <li>MyButton: Two button components provide "Confirm" and "Cancel" actions. Their styling varies based on the type and size attributes, ensuring a consistent and theme-appropriate appearance.</li>
+            </ul>
+        
+            <!-- Image below the list -->
+            <img src="/assets/components3-D1-MTyHd.png" alt="Popup Component Example" 
+                class="w-full max-w-2xl mx-auto rounded-lg shadow-md mt-4" />
+            <p>This approach simplified the development process and allowed me to reuse elements in other components, ensuring consistency and efficiency. </p>
+        </div>
+        
+        <!--5th-->
+        <div class="space-y-4 mt-6">
+            <h3 class="text-xl font-bold">Challenges</h3>
+        
+            <p>
+                One challenge I had was managing the export button properties. Initially exporting elements like name, type, size, and color and ensuring they interacted correctly with the component logic was tricky. However, through persistent trial and error and experimenting with Svelte’s syntax, I eventually mastered the logic and was able to customize the button components effectively. Working on this project while simultaneously learning JavaScript gave me a much clearer understanding of Svelte’s export mechanism.
+            </p>
+        
+            <!-- Image between paragraphs -->
+            <img src="/assets/components4-SvZg0J3O.png" alt="Export Button Logic" 
+                class="w-full max-w-md mx-auto rounded-lg shadow-md" />
+        
+            <p>
+                Another challenge I encountered was understanding how to properly import the necessary components. Initially, I struggled with importing the correct elements and integrating them into the popup component. However, after some trial and error and a deeper dive into Svelte’s import syntax, I was able to seamlessly pull in and use the imported elements.
+            </p>
+        
+            <!-- Two images side by side under the second paragraph -->
+            <div class="flex flex-wrap justify-center gap-4">
+                <img src="/assets/components5-cxDowQHn.png" alt="Svelte Import Syntax" 
+                    class="w-full sm:w-[31%] max-w-sm rounded-lg shadow-md" />
+                <img src="/assets/components6-D9dPsO_L.png" alt="Component Integration" 
+                    class="w-full sm:w-[65%] max-w-sm rounded-lg shadow-md" />
+            </div>
+        </div>
+
+        <!--6th-->
+        <div class="space-y-4 mt-6">
+            <h3 class="text-xl font-bold">Conclusion</h3>
+        
+            <p>
+                In this case study, I built a popup component using Svelte and Tailwind CSS. Although I faced challenges with exporting and importing elements, I managed to create a flexible component with both light and dark themes. In the future, I plan to simplify the structure even more and improve accessibility. This project helped me learn about Svelte and Tailwind, and it has set a solid foundation for further improvements in my component design.
+            </p>
+        
+            <!-- Two images side by side under the paragraph -->
+            <div class="flex flex-wrap justify-center gap-4">
+                <img src="/assets/components7-BDPbeIQD.png" alt="Popup Component - Light Theme" 
+                    class="w-full sm:w-[48%] max-w-sm rounded-lg shadow-md" />
+                <img src="/assets/components8-Oy6bz8-W.png" alt="Popup Component - Dark Theme" 
+                    class="w-full sm:w-[48%] max-w-sm rounded-lg shadow-md" />
+            </div>
+        </div>
+
+
+      </div>
+
+      <footer class="footer-center bg-secondary text-white text-center p-4">
+        <p>Copyright &copy; 2025 &bull; Eliza Kimball</p>
+      </footer>
+    </main>
+  </body>
+</html>

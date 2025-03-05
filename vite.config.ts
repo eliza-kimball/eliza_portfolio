@@ -21,8 +21,12 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, 'index.html'), // Root index.html
+        resume: resolve(root, 'src/resume.html'), // Corrected path
         advising: resolve(root, 'src/cs_advising.html'), // Corrected path
         weather: resolve(root, 'src/weather.html'), // Corrected path
+        components: resolve(root, 'src/components.html'), // Corrected path
+        sass: resolve(root, 'src/sass.html'), // Corrected path
+        kidswhocount: resolve(root, 'src/kidswhocount.html'), // Corrected path
       }
     }
   }
