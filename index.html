@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" data-theme="winter">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/style.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Reddit_Sans]">
+
+  <!-- Nav Bar -->
+  <div class="bg-secondary text-white w-full">
+  <div class="navbar bg-secondary text-white max-w-7xl mx-auto">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">ELIZA</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="#work">Work</a></li>
+        <li><a href="./src/resume.html">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+<main>
+  <!-- Hero -->
+  <div class="hero min-h-[80vh]">
+    <div class="hero-content text-center max-w-7xl mx-auto">
+      <div class="max-w-lg">
+        <h1 class="text-7xl font-bold text-accent">Eliza Kimball</h1>
+        <p class="py-6 text-xl">
+          A frontend developer with a passion for solving problems and creating meaningful connections through code.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About section -->
+   <h2 class="pl-8 text-4xl mt-6 max-w-7xl mx-auto text-secondary">About</h2>
+   <div class="flex w-full flex-col max-w-7xl mx-auto">
+    <div class="divider"></div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-content flex-col lg:flex-row max-w-7xl mx-auto">
+      <img
+        src="./images/eliza.png" alt="Eliza Kimball" width="500" height="667"
+        class="max-w-sm rounded-lg shadow-2xl w" />
+      <div class="pl-4 max-w-2xl">
+        <p class="py-3">
+          I started my journey at BYU as a computer science major, but it wasn’t until I took Web Essentials that I truly discovered my passion for frontend development. I love the intersection of design and technology—where UX/UI meets problem-solving through code. While I specialize in frontend development, I’m also expanding my technical foundation with a minor in computer science.
+        </p>
+        <p class="py-3">
+          Beyond coding and creating, you’ll find me immersed in a good book, exploring the outdoors on a hike, playing the piano, or planning my next adventure.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- work -->
+  <h2 id="work" class="pl-8 text-4xl mt-6 max-w-7xl mx-auto text-secondary">Selected Work</h2>
+  <div class="flex w-full flex-col max-w-7xl mx-auto">
+   <div class="divider"></div>
+ </div>
+   <div class="flex flex-wrap justify-center gap-4 mb-4">
+
+    <!--card 1-->
+  <div class="card bg-base-100 w-96 shadow-sm">
+    <figure>
+      <img
+        src="./images/SOE_cover.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-black">Advising Page Redesign</h2>
+      <p>Redesigning UVU’s School of Education advising page improved navigation, clarified advisor information, and streamlined the user experience</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-secondary text-white"><a href="./src/cs_advising.html">Learn More</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!--card 2-->
+  <div class="card bg-base-100 w-96 shadow-sm">
+    <figure>
+      <img
+        src="./images/Js_cover.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-black">Unlocking the Power of JavaScript</h2>
+      <p>Building a weather app with JavaScript and API integration taught me how to fetch real-time data and update the UI dynamically</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-secondary text-white "><a href="./src/weather.html">Learn More</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!--card 3-->
+  <div class="card bg-base-100 w-96 shadow-sm">
+    <figure>
+      <img
+        src="./images/tailwind_cover.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-black">Rebuilding Modern UI Components</h2>
+      <p>Svelte and Tailwind CSS taught me how to create reusable UI elements, manage component logic, and enhance styling efficiency</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-secondary text-white "><a href="./src/components.html">Learn More</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!--card 4-->
+  <div class="card bg-base-100 w-96 shadow-sm">
+    <figure>
+      <img
+        src="./images/sass_cover.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-black">Enhancing Responsive Web Design with SASS</h2>
+      <p>Using SCSS, I built a responsive diner website with adaptive navigation, dynamic card layouts, and a structured footer</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-secondary text-white "><a href="./src/sass.html">Learn More</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!--card 5-->
+  <div class="card bg-base-100 w-96 shadow-sm">
+    <figure>
+      <img
+        src="./images/kidswhocount.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-black">Unlocking the Power of JavaScript</h2>
+      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-secondary text-white ">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!--card 6-->
+  <div class="card bg-base-100 w-96 shadow-sm">
+    <figure>
+      <img
+        src="./images/tscover.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title text-black">Unlocking the Power of JavaScript</h2>
+      <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+      <div class="card-actions justify-end">
+        <button class="btn btn-secondary text-white ">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--contact-->
+<h2 id="contact" class="pl-8 text-4xl mt-6 max-w-7xl mx-auto text-secondary">Contact</h2>
+   <div class="flex w-full flex-col max-w-7xl mx-auto">
+    <div class="divider"></div>
+        <p class="mt-2 text-lg ml-8">Let's work together!</p>
+        <!-- Email Link -->
+        <p class="mt-4 text-4xl mb-8 ml-8">
+            <a href="mailto:elizajkimball@gmail.com" class="text-accent font-semibold hover:underline">
+                elizajkimball@gmail.com
+            </a>
+        </p>
+  </div>
+ 
+
+<!-- Footer -->
+ <footer class="footer-center bg-secondary text-white text-center p-4">
+  <p>Copyright &copy; 2025 &bull; Eliza Kimball</p>
+ </footer>
+
+  
+</body>
+</html>

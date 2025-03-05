@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="winter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-[Reddit_Sans]">
+    <!-- Nav Bar -->
+    <div class="bg-secondary text-white w-full">
+      <div class="navbar bg-secondary text-white max-w-7xl mx-auto">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl" href="../index.html">ELIZA</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="max-w-4xl mx-auto py-8 px-6 text-md leading-relaxed">
+        <!--Title -->
+        <div class="text-center p-4">
+          <h1 class="text-4xl p-2 text-secondary">
+            Enhancing Responsive Web Design with SASS
+          </h1>
+        </div>
+
+        <!--process-->
+        <div class="space-y-4 mt-6">
+          <p>
+            SASS (Syntactically Awesome Stylesheets) enhances CSS by introducing
+            powerful features that streamline styling, improve maintainability,
+            and boost scalability. When tasked with developing a diner’s website
+            for hungry customers I decided to feature a responsive navigation
+            bar and adaptable card layouts, I turned to SCSS to streamline the
+            process. Its modular approach allowed me to write cleaner, more
+            structured code while ensuring a seamless, adaptive experience
+            across various screen sizes. This case study delves into how SCSS
+            optimized the responsive design workflow, enabling the creation of
+            dynamic layouts that effortlessly adjust to different devices.
+          </p>
+        </div>
+
+        <!--1st -->
+        <div class="space-y-4 mt-6">
+          <h3 class="text-xl font-bold">Responsive Navigation</h3>
+
+          <!-- First paragraph with image to the right -->
+          <div class="flex flex-col md:flex-row items-start md:space-x-4">
+            <p class="flex-1">
+              After structuring my content in HTML, the next step was styling
+              the page for responsiveness. I began by creating a responsive
+              navigation system that adapts to different screen sizes. For small
+              and medium screens, I implemented a dropdown hamburger menu that
+              toggles open and closed. On larger screens, I opted for a
+              right-aligned navigation layout for better usability.
+            </p>
+            <img
+              src="../images/sass2.png"
+              alt="Responsive Navigation Design"
+              class="w-full md:w-1/5 max-w-sm rounded-lg shadow-md mt-4 md:mt-0"
+            />
+          </div>
+
+          <!-- Image under the second paragraph -->
+          <p>
+            To achieve this, I used SCSS to style the menu icons efficiently,
+            leveraging the content property and targeting the appropriate HTML
+            elements using IDs. A small amount of JavaScript was then used to
+            toggle between the hamburger and exit icons by dynamically assigning
+            and switching class names. This approach successfully set up
+            responsive navigation for both small and medium screens.
+          </p>
+          <img
+            src="../images/sass3.png"
+            alt="SCSS Menu Styling"
+            class="w-full max-w-md mx-auto rounded-lg shadow-md"
+          />
+
+          <!-- Third paragraph with image to the right -->
+          <div class="flex flex-col md:flex-row items-start md:space-x-4 mt-4">
+            <p class="flex-1">
+              For larger screens, I simply hid the menu button by setting its
+              display property to none, effectively removing the hamburger and
+              exit icons. I then applied display: flex to the navigation
+              container and used justify-content: flex-end to align the
+              navigation items to the right. This method ensured a clean,
+              adaptive navigation experience across all devices.
+            </p>
+            <img
+              src="../images/sass4.png"
+              alt="Large Screen Navigation"
+              class="w-full md:w-1/4 max-w-sm rounded-lg shadow-md mt-4 md:mt-0"
+            />
+          </div>
+
+          <!-- Two images under the third paragraph -->
+          <div class="flex flex-wrap justify-center gap-4 mt-4">
+            <img
+              src="../images/sass5.png"
+              alt="Navigation UI Mobile"
+              class="w-full sm:w-[48%] max-w-sm rounded-lg shadow-md"
+            />
+          </div>
+
+          <!--2nd-->
+          <div class="space-y-4 mt-6">
+            <h3 class="text-xl font-bold">Adaptable Cards</h3>
+
+            <p>
+              The next step in creating a responsive site across all screen
+              sizes was ensuring that the cards adapted seamlessly. For small
+              screens, the cards aligned in a single column, which required only
+              simple styling to maintain proper alignment and proximity.
+            </p>
+
+            <p>
+              For medium and large screens, I used SASS calculations to
+              dynamically adjust the card layout while maintaining consistent
+              spacing:
+            </p>
+
+            <!-- Third paragraph with image to the right -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-4">
+              <p class="flex-1">
+                On medium screens, the cards are arranged in two columns. The
+                <code>calc(50% - ($gutter / 2))</code> ensures that each card
+                takes up half the available width while accounting for the
+                gutter space between them.
+              </p>
+              <img
+                src="../images/sass6.png"
+                alt="Medium Screen Card Layout"
+                class="w-full md:w-1/3 max-w-sm rounded-lg shadow-md mt-4 md:mt-0"
+              />
+            </div>
+
+            <!-- Fourth paragraph with image to the right -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-4">
+              <p class="flex-1">
+                On large screens, the cards are distributed into three columns.
+                The <code>calc(33.333% - (($gutter * 2) / 3))</code> calculation
+                ensures that the spacing remains proportional, keeping the
+                layout visually balanced.
+              </p>
+              <img
+                src="../images/sass7.png"
+                alt="Large Screen Card Layout"
+                class="w-full md:w-1/3 max-w-sm rounded-lg shadow-md mt-4 md:mt-0"
+              />
+            </div>
+
+            <p>
+              By leveraging SASS for these calculations, I was able to create a
+              flexible grid system that scales naturally across different screen
+              sizes while maintaining consistent spacing.
+            </p>
+          </div>
+
+          <!--3rd-->
+          <div class="space-y-4 mt-6">
+            <h3 class="text-xl font-bold">Overcoming Layout Challenges</h3>
+
+            <p>
+              One challenge I encountered was working with the responsive
+              footer. This was my first time creating a large footer containing
+              contact information, social links, and the address. On medium and
+              large screens, I wanted three columns for this content, followed
+              by a single row beneath it containing the copyright information
+              without additional columns.
+            </p>
+
+            <p>
+              The main difficulty I faced was structuring the footer properly—my
+              rows and columns kept getting mixed up, which disrupted the
+              layout. After troubleshooting, I was able to refine my approach
+              using CSS Grid:
+            </p>
+
+            <!-- Container for 3rd and 4th paragraphs + Single Image to the Right -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-4">
+              <div class="flex-1 space-y-4">
+                <p>
+                  This setup ensures that the main footer content is split into
+                  three equal columns, keeping everything aligned neatly. The
+                  <code>.legal</code> section for the copyright information
+                  spans only the second column, keeping it centered while
+                  preventing unwanted column division.
+                </p>
+
+                <p>
+                  By carefully structuring the grid and assigning the copyright
+                  row separately, I was able to achieve the desired footer
+                  layout, ensuring both visual balance and clarity across
+                  different screen sizes.
+                </p>
+              </div>
+
+              <!-- Single image to the right -->
+              <img
+                src="../images/sass8.png"
+                alt="Final Footer Grid Layout"
+                class="w-full md:w-1/3 max-w-sm rounded-lg shadow-md mt-4 md:mt-0"
+              />
+            </div>
+
+            <!-- Image under the fourth paragraph -->
+            <img
+              src="../images/sass9.png"
+              alt="Footer Mobile Layout"
+              class="w-full max-w-2xl mx-auto rounded-lg shadow-md mt-4"
+            />
+          </div>
+
+          <!--4th-->
+          <div class="space-y-4 mt-6 mb-6">
+            <h3 class="text-xl font-bold">Conclusion</h3>
+
+            <p>
+              With the layout and content in place, the final step was refining
+              the design through color, typography, and spacing to enhance
+              usability and aesthetics. SCSS played a key role in streamlining
+              the responsive design process, allowing for cleaner, modular code
+              while ensuring adaptability across screen sizes.
+            </p>
+
+            <!-- Container for 3rd and 4th paragraphs + Single Image to the Right -->
+            <div class="flex flex-col md:flex-row items-start md:space-x-4">
+              <div class="flex-1 space-y-4">
+                <p>
+                  This project also reinforced the importance of problem-solving
+                  in web development. Overcoming layout challenges, like
+                  structuring a responsive footer, helped me improve my approach
+                  to complex designs using CSS Grid, Flexbox, and SCSS
+                  calculations.
+                </p>
+
+                <p>
+                  By combining technical efficiency with thoughtful design, I
+                  created a responsive, scalable, and visually cohesive website,
+                  strengthening my skills in front-end development and adaptive
+                  UI design.
+                </p>
+              </div>
+
+              <!-- Single image to the right -->
+              <img
+                src="../images/sass10.png"
+                alt="Final Footer Grid Layout"
+                class="w-full md:w-1/2 max-w-sm rounded-lg shadow-md mt-4 md:mt-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer-center bg-secondary text-white text-center p-4">
+        <p>Copyright &copy; 2025 &bull; Eliza Kimball</p>
+      </footer>
+    </main>
+  </body>
+</html>

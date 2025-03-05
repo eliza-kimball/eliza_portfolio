@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="winter">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-[Reddit_Sans]">
+    <!-- Nav Bar -->
+    <div class="bg-secondary text-white w-full">
+      <div class="navbar bg-secondary text-white max-w-7xl mx-auto">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl" href="../index.html">ELIZA</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="max-w-4xl mx-auto py-8 px-6 text-md leading-relaxed">
+        <!--hero img -->
+        <!--Title -->
+
+        <div class="text-center p-4">
+          <h1 class="text-4xl p-2 text-secondary">
+            Unlocking the Power of JavaScript
+          </h1>
+        </div>
+
+        <!--process-->
+        <div class="text-md leading-relaxed">
+          <p>
+            JavaScript powers the interactive aspects of websites, and this
+            skill was exactly what I needed when tasked with building a weather
+            application where users can retrieve and display real-time data
+            based on a zip code. My goal was to create a user-friendly interface
+            that could fetch data from a weather API and update dynamically
+            based on user input. The application features a clean design and
+            intuitive controls, allowing users to effortlessly check the weather
+            for different locations without any technical complexity.
+          </p>
+        </div>
+
+        <!--1st -->
+        <div class="space-y-4 mt-6">
+          <h3 class="text-xl font-bold">Displaying Real-Time Weather Data</h3>
+
+          <p>
+            First, I needed to fetch remote JSON data for real-time weather
+            updates. Before this project, my experience was limited to
+            retrieving local data using JavaScript. I stored my API key in myKey
+            and used template literals to construct myPath, dynamically
+            embedding the zip code. Using fetch(), I retrieved weather data from
+            the OpenWeatherMap API, converted it to JSON, and passed it to
+            currentWeather() to update the UI.
+          </p>
+
+          <!-- Image below the first paragraph -->
+          <img
+            src="../images/weather1.png"
+            alt="Fetching Weather Data"
+            class="w-full max-w-4xl mx-auto"
+          />
+
+          <div class="flex items-start space-x-4">
+            <p class="flex-1">
+              The currentWeather() function extracts JSON data to display key
+              weather details, including the city name, date, weather icon, and
+              other relevant information. After successfully retrieving and
+              displaying the data, I encountered several challenges.
+            </p>
+
+            <!-- Image to the right of the second paragraph -->
+            <img
+              src="../images/weather2.png"
+              alt="Weather UI Display"
+              class="w-1/2 max-w-xs"
+            />
+          </div>
+        </div>
+
+        <!--2nd -->
+        <div class="space-y-4 mt-6">
+          <h3 class="text-xl font-bold">Challenges</h3>
+
+          <p>
+            One of the first challenges I faced was allowing users to enter a
+            new zip code dynamically. I decided to implement an interactive icon
+            that, when clicked, would open a card where users could input a new
+            zip code. Through trial and error, I successfully connected my
+            JavaScript to my HTML, enabling seamless UI manipulation. By using
+            querySelector() to target the modal and settings icon, I toggled the
+            visibility of the input card with a simple event listener.
+          </p>
+
+          <!-- Image below the first paragraph -->
+          <img
+            src="../images/weather3.png"
+            alt="Fetching Weather Data"
+            class="w-full max-w-lg mx-auto"
+          />
+
+          <p>
+            After implementing an event listener to update the zip code when the
+            "Set New Zip Code" button was clicked, I realized I hadn’t accounted
+            for a default zip code. Rather than hardcoding a default, I wanted a
+            more user-friendly approach. This led me to explore local storage,
+            allowing the application to remember the last zip code entered. By
+            checking if a stored ZIP code exists, the script either retrieves
+            the previous entry or sets a default value, ensuring a seamless user
+            experience when revisiting the site.
+          </p>
+
+          <!-- Image below the first paragraph -->
+          <img
+            src="../images/weather4.png"
+            alt="Fetching Weather Data"
+            class="w-full max-w-md mx-auto"
+          />
+        </div>
+
+        <!--3rd -->
+        <div class="space-y-4 mt-6">
+          <h3 class="text-xl font-bold">User-Friendly Interface</h3>
+          <div class="flex items-start space-x-4">
+            <p class="flex-1">
+              This is the page after integrating HTML and JavaScript. While it
+              successfully updates and reloads new data dynamically, the initial
+              interface felt plain, unstructured, and unintuitive. To enhance
+              usability, I applied CSS to introduce color, typography, and
+              card-based layouts, making the design more visually appealing and
+              user-friendly. The improved font selection enhances readability,
+              while the carefully chosen colors create a calm and inviting user
+              experience.
+            </p>
+
+            <!-- Image to the right of the second paragraph -->
+            <img
+              src="../images/weather5.png"
+              alt="Weather UI Display"
+              class="w-1/3 max-w-sm"
+            />
+          </div>
+        </div>
+
+        <!--4th-->
+        <div class="flex justify-center space-x-4 mb-4 mt-6">
+          <img
+            src="../images/weather6.png"
+            alt="Weather Forecast UI"
+            class="w-1/2 max-w-sm rounded-lg shadow-md"
+          />
+          <img
+            src="../images/weather7.png"
+            alt="Weather Data Display"
+            class="w-1/2 max-w-sm rounded-lg shadow-md"
+          />
+        </div>
+
+        <!-- Existing content -->
+        <div class="space-y-4 mt-6">
+          <h3 class="text-xl font-bold">What I Would Do Differently</h3>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>Add a 7-day weather forecast display</li>
+            <li>Improve screen responsiveness across screens</li>
+            <li>Allow users to save multiple locations</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4 mt-6">
+            <h3 class="text-xl font-bold">Conclusion</h3>
+            <p>Building this weather application was a transformative learning experience that deepened my understanding of JavaScript, API integration, and user interface design. Throughout the process, I faced challenges such as retrieving remote data, dynamically updating the UI, and enhancing user experience with CSS and local storage. Overcoming these obstacles not only strengthened my technical skills but also reinforced my ability to problem-solve and adapt. This project serves as a testament to my proficiency in leveraging web technologies to create interactive, user-friendly applications.</p>
+          </div>
+
+      </div>
+
+      <footer class="footer-center bg-secondary text-white text-center p-4">
+        <p>Copyright &copy; 2025 &bull; Eliza Kimball</p>
+      </footer>
+    </main>
+  </body>
+</html>
