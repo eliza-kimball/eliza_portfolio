@@ -9,12 +9,13 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "daisyui": "^5.0.0-beta.8",
+    "@types/node": "^22.13.9",
+    "daisyui": "^5.0.0",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.9",
-    "tailwindcss": "^4.0.9"
+    "tailwindcss": "^4.0.10"
   }
 }
