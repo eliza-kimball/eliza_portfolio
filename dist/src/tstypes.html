@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" data-theme="winter">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/assets/style-D4ik2sL0.css">
+</head>
+<body class="font-[Reddit_Sans]">
+
+  <!-- Nav Bar -->
+  <div class="bg-secondary text-white w-full">
+    <div class="navbar bg-secondary text-white max-w-7xl mx-auto">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl" href="../index.html">ELIZA</a>
+    </div>
+    <div class="flex-none">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <main>
+    <div class="max-w-4xl mx-auto py-8 px-6 text-md leading-relaxed">
+
+        <!--hero img -->
+        <!--Title -->
+      
+          <div class="text-center p-4">
+              <h1 class="text-4xl p-2 text-secondary">Enhancing JavaScript with TypeScript</h1>
+          </div>
+
+          <!--1st-->
+          <div class="flex flex-col lg:flex-row items-center gap-8">
+            <!-- Text Section -->
+            <div class="text-md leading-relaxed w-full">
+                <p>
+                    JavaScript is a powerful, dynamic language, but its flexibility can sometimes lead to unpredictable behavior, especially in large-scale applications. TypeScript, a superset of JavaScript, improves reliability by:                </p>
+        
+                <ul class="list-disc pl-6 space-y-2 p-6">
+                    <li>Catching errors at compile time</li>
+                    <li>Enforcing static typing for better predictability</li>
+                    <li>Improving code readability and maintainability</li>
+                </ul>
+                <p>To showcase TypeScript’s strengths, I developed an interactive webpage that demonstrates its fundamental type system. This project categorizes TypeScript’s types into three main groups: basic types, array types, and special types. </p>
+            </div>
+        </div>
+
+        <!--2nd-->
+<div class="flex flex-col md:flex-row items-start md:space-y-0 md:space-x-6 space-y-4 mt-10">
+    <div class="md:w-2/3">
+        <h3 class="text-xl font-bold mb-6">Structuring TypeScript for Reusability</h3>
+
+        <p class="mt-4">
+            To kickstart this project, I structured the code using modular functions, each containing a title, explanation, and code example. This approach allows me to efficiently import and display these examples on the interactive webpage.
+        </p>
+        <p class="mt-4">
+            TypeScript enhances this process by enforcing strong typing and modular design, ensuring that each function consistently returns an object with well-defined properties. This makes the code more predictable and maintainable, reducing the risk of errors when integrating different type examples.
+        </p>
+        <p class="mt-4">
+            By leveraging TypeScript’s static typing and modular exports, these functions can be reused across different parts of the project, making the execution more scalable and organized. This structured approach ensures that each example is clear, reusable, and easily accessible for users.
+        </p>
+    </div>
+
+    <div class="md:w-1/2 pt-15">
+        <img src="/assets/ts1-CtFkuo6f.png" alt="Illustration of TypeScript reusability" class="w-full rounded-lg shadow-lg">
+    </div>
+</div>
+
+<!--3rd-->
+<div class="mt-10">
+    <h3 class="text-xl font-bold mb-6">Using <code>const</code> for References and Event Listeners</h3>
+
+    <p class="mt-4">
+        After defining the TypeScript example functions, I created references to key elements in the DOM using <code>const</code>. These references allow me to attach event listeners to buttons and dynamically load content into the designated card elements. When a button is clicked, the corresponding TypeScript example function is executed, displaying the title, explanation, and syntax-highlighted code on the page.
+    </p>
+
+    <div class="mt-6">
+        <img src="/assets/ts2-CPr1ZEGN.png" alt="Illustration of event listeners in TypeScript" class="w-full rounded-lg shadow-lg">
+    </div>
+</div>
+
+
+<!-- 4th -->
+<div class="mt-10">
+    <h3 class="text-xl font-bold mb-6">Dynamically Loading TypeScript Examples</h3>
+
+    <p class="mt-4">
+        To streamline the process of displaying TypeScript examples, I decided to write a function that could load an array of examples for each type dynamically. This function, <code>loadExamples</code>, takes an array of example objects and inserts them into the HTML structure using template literals.
+    </p>
+    
+    <p class="mt-4">
+        Initially, I found working with HTML inside template literals a bit confusing. I wasn’t sure where each piece of data should go, especially when dealing with dynamically inserting titles, explanations, and syntax-highlighted code. However, by carefully structuring the function, I was able to dynamically update the content for each selected example.
+    </p>
+
+    <!-- Image Between Paragraphs -->
+    <div class="mt-6 mb-6">
+        <img src="/assets/ts3-DIv4_Wph.png" alt="Illustration of dynamically loading TypeScript examples" class="w-80 rounded-lg shadow-lg">
+    </div>
+
+    <p class="mt-4">
+        By iterating through the examples array, this function constructs an HTML block for each example, ensuring that the title, explanation, and syntax-highlighted code are properly displayed. Understanding how to structure template literals and insert data dynamically was an essential learning step in making the project interactive and scalable.
+    </p>
+</div>
+
+<!-- 5th -->
+<div class="mt-10">
+    <h3 class="text-xl font-bold mb-6">Styling the Website with DaisyUI</h3>
+
+    <p class="mt-4">
+        Once I ensured that my TypeScript functionality worked as expected, I moved on to styling the website. Since this is a personal project, I wanted a design that felt both engaging and visually appealing, so I chose a pink theme from DaisyUI.
+    </p>
+
+    <p class="mt-4">
+        For the layout, I positioned the navigation menu on the left, allowing easy access to different TypeScript examples. The example display section is scrollable, ensuring that users can explore multiple examples seamlessly. Each example block presents the TypeScript type title, explanation, and code snippet, maintaining a clear and structured look while keeping the interface interactive and user-friendly.
+    </p>
+
+    <!-- Two Images Side by Side -->
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="/assets/ts4-B0NwQfX6.png" alt="DaisyUI Theme Example 1" class="w-full rounded-lg shadow-lg">
+        <img src="/assets/ts5-C-qAb_qh.png" alt="DaisyUI Theme Example 2" class="w-full rounded-lg shadow-lg">
+    </div>
+</div>
+
+<!--6th-->
+<div class="flex flex-col lg:flex-row items-center mt-10">
+    <!-- Text Section -->
+    <div class="text-md leading-relaxed w-full">
+        <h3 class="text-xl font-bold mb-6">Conclusion</h3>
+
+        <p>TypeScript proved to be incredibly useful. Initially, I was unsure about it, but as I worked with it, I realized how much it enhances JavaScript by adding structure and reliability. Looking back, I wish I had been more organized in my approach—planning out necessary functions and defining a clearer path to my end goal. Moving forward, I want to refine my project planning skills and explore loading external data onto a webpage to make my applications more dynamic and interactive.</p>
+    </div>
+</div>
+
+
+
+        
+
+    </div>
+    
+  <footer class="footer-center bg-secondary text-white text-center p-4">
+    <p>Copyright &copy; 2025 &bull; Eliza Kimball</p>
+   </footer>
+
+  </main>
+  </body>
+</html>

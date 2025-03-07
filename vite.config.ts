@@ -27,6 +27,7 @@ export default defineConfig({
         components: resolve(root, 'src/components.html'), // Corrected path
         sass: resolve(root, 'src/sass.html'), // Corrected path
         kidswhocount: resolve(root, 'src/kidswhocount.html'), // Corrected path
+        typescript: resolve(root, 'src/tstypes.html'), // Corrected path
       }
     }
   }
